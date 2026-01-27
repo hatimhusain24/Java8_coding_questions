@@ -1,3 +1,5 @@
+package Java_normal;
+
 import java.util.Scanner;
 //Problem statement : Reverse the words in given string
 public class ReverseWordsInString {

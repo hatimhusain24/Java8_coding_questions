@@ -1,3 +1,5 @@
+package Java_normal;
+
 //find the second largest distinct element in the array
 public class FindSecondLargestElement {
     public static void main(String[] args) {

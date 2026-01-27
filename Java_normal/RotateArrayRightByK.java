@@ -1,3 +1,5 @@
+package Java_normal;
+
 import java.util.Arrays;
 //Rotate the array to the right by k
 public class RotateArrayRightByK {

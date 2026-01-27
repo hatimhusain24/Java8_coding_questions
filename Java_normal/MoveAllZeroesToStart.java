@@ -1,3 +1,5 @@
+package Java_normal;
+
 import java.util.Arrays;
 //Problem Statement : Move all zeroes to the start
 public class MoveAllZeroesToStart {

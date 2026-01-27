@@ -1,3 +1,5 @@
+package Java_normal;
+
 //Find the missing number from 1 to n
 public class MissingNumber {
     public static void main(String[] args) {
