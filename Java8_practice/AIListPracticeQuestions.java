@@ -58,6 +58,6 @@ public class AIListPracticeQuestions {
         list.stream().filter(s-> s.startsWith("A")).count();
         list.stream().filter(s-> s.contains("av")).count();
 //        Group elements by a key (e.g., length, category)
-
+        list.stream().collect(Collectors.groupingBy(String::length));
     }
 }
