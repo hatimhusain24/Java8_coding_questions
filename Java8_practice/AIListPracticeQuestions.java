@@ -3,7 +3,9 @@ package Java8_practice;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
+import java.util.Map;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class AIListPracticeQuestions {
     public static void main(String[] args) {
@@ -59,5 +61,19 @@ public class AIListPracticeQuestions {
         list.stream().filter(s-> s.contains("av")).count();
 //        Group elements by a key (e.g., length, category)
         list.stream().collect(Collectors.groupingBy(String::length));
+//        Find intersection of two lists
+        List<Integer> list1 = Arrays.asList(1, 3, 5);
+        List<Integer> list2 = Arrays.asList(2,3, 4, 6);
+        Stream.concat(list1.stream(), list2.stream()).sorted().collect(Collectors.toList());
+        List<Integer> intersection = list1.stream().filter(list2::contains).toList();
+        System.out.println(intersection);
+
+//        Count number of words using groupingBy
+        String sentence = "java is java and stream is powerful";
+        Map<String, Long> map = Arrays.stream(sentence.split(" "))
+                .collect(Collectors.groupingBy(s->s, Collectors.counting()));
+        System.out.println(map);
+
+
     }
 }
