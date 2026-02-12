@@ -73,7 +73,5 @@ public class AIListPracticeQuestions {
         Map<String, Long> map = Arrays.stream(sentence.split(" "))
                 .collect(Collectors.groupingBy(s->s, Collectors.counting()));
         System.out.println(map);
-
-
     }
 }
