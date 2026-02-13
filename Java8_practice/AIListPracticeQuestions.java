@@ -68,6 +68,7 @@ public class AIListPracticeQuestions {
         List<Integer> intersection = list1.stream().filter(list2::contains).toList();
         System.out.println(intersection);
 
+
 //        Count number of words using groupingBy
         String sentence = "java is java and stream is powerful";
         Map<String, Long> map = Arrays.stream(sentence.split(" "))
